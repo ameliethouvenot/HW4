@@ -2,6 +2,10 @@ class UsersController < ApplicationController
   def new
   end
 
+  #def show 
+    #@user =User.find_by({"id" => params["id"]})
+  #end 
+
   def create
     @user = User.new
     @user["first_name"] = params["first_name"]
