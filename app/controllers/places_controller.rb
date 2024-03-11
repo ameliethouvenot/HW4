@@ -4,6 +4,12 @@ class PlacesController < ApplicationController
     @places = Place.all
   end
 
+
+  #  respond_to do |format|
+  #    format.html do 
+  #    end     
+  #end
+
   def show
     if User.find_by({"id" => session["user_id"]}) !=nil 
        @place = Place.find_by({ "id" => params["id"] })

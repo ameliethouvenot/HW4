@@ -20,27 +20,13 @@ amsterdam.save
 puts "There are now #{Place.all.count} places I have visited."
 
 
-Entry.destroy_all
+#Entry.destroy_all
 
-tacos = Entry.new
-tacos["title"] = "Ate tacos"
-tacos["description"] = "Add fantastic details"
-tacos["posted_on"] = "2022-01-01"
-tacos["place_id"] = cdmx.id
-tacos.save
+#tacos = Entry.new
+#tacos["title"] = "Ate tacos"
+#tacos["description"] = "Add fantastic details"
+#tacos["posted_on"] = "2022-01-01"
+#tacos["place_id"] = cdmx.id
+#tacos.save
 
-wedding = Entry.new
-wedding["title"] = "Lisa and Jim's wedding"
-wedding["description"] = "Add awesome details"
-wedding["posted_on"] = "2022-01-01"
-wedding["place_id"] = cdmx.id
-wedding.save
-
-tacosagain = Entry.new
-tacosagain["title"] = "Ate tacos again"
-tacosagain["description"] = "Add incredible details"
-tacosagain["posted_on"] = "2022-01-01"
-tacosagain["place_id"] = cdmx.id
-tacosagain.save
-
-puts "There are now #{Entry.all.count} entries I have visited."
+#puts "There are now #{Entry.all.count} entries I have visited."
