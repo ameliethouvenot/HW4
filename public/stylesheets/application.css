@@ -1,0 +1,15 @@
+body {
+  background-color: purple;
+}
+
+p a{
+  color: yellow;
+}
+
+.buttons {
+  font-size: 89px;
+}
+
+.gutter-left{
+  margin-left: 30px;
+}
