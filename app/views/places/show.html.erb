@@ -8,11 +8,20 @@
     <div class="cold-sm-6 col-md-4">
     <h3><%= entry["title"] %></h3>
     <h4><%= entry["occurred_on"] %></h4>
-    <img class = "img-fluid" src="<%= entry["image"] %>" class="w-full" >
+      <% if entry.uploaded_image.attached? %>
+        <%# use url_for(post.uploaded_image) as attached file's url %>
+        <img src="<%= url_for(entry.uploaded_image) %>" class="img-fluid">
+      <% else %>
+        <%# otherwise display original image url from database column %>
+        <img src="<%= entry["image"] %>" class="img-fluid">
+      <% end %>
     <p><%= entry["description"] %></p>
     </div>
   <% end %>
     
+  
+
+
 </div>
 
 <p>
